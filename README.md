@@ -24,10 +24,14 @@ npm install --save node-apk-parser-promise
 Basic usage via promises looks like this:
 
 ```javascript
+var reader;
+
 require('node-apk-parser-promise')
   .load('./test.apk') // Start the open+read of the ZIP file
-  .then((reader) => {
-    // Got an ApkReader object, start reading the manifest
+  .then((r) => {
+    // Got an ApkReader object, cache it here for later use, or start reading
+    // the manifest
+    reader = r;
     return reader.readManifest();
   })
   .then((manifest) => {
@@ -36,6 +40,9 @@ require('node-apk-parser-promise')
   })
   .catch((err) => {
     console.error("ERROR: " + err);
+  }).
+  done(() => {
+    reader.close();
   });
 ```
 
