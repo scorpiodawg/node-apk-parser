@@ -1,5 +1,5 @@
 {
-  "name": "node-apk-parser-promise",
+  "name": "apk-parser-promise",
   "version": "1.0.0",
   "description": "Extracts information from APK files asynchronously with a promise-based API.",
   "keywords": [
@@ -13,17 +13,14 @@
     "url": "https://github.com/scorpiodawg/node-apk-parser-promise/issues"
   },
   "license": "Apache-2.0",
-  "author": {
-    "name": "Arthur Zhang",
-    "email": "zhangya_no1@qq.com"
-  },
+  "author": "Arthur Zhang <zhangya_no1@qq.com>",
   "contributors": [
     "Ravi Subramanian <scorpiodawg@gmail.com>"
   ],
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/scorpiodawg/node-apk-parser-promise"
+    "url": "git+https://github.com/scorpiodawg/node-apk-parser-promise.git"
   },
   "scripts": {
     "test": "jasmine"
@@ -39,5 +36,12 @@
   "engines": {
     "node": ">= 0.10.4"
   },
-  "homepage": "https://github.com/scorpiodawg/node-apk-parser-promise"
+  "homepage": "https://github.com/scorpiodawg/node-apk-parser-promise",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {
+    "jasmine": "^2.8.0"
+  }
 }

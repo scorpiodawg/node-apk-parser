@@ -1,6 +1,8 @@
 node-apk-parser-promise
 ===
 
+>NOTE: This code is under development.
+
 This is a fork of `@arthur-zhang`'s [node-apk-parser library](https://github.com/arthur-zhang/node-apk-parser)
 to enable an asynchronous API for use in servers. It uses the promises API and is based on the
 `bluebird` Node.js library.
