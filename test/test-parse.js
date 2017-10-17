@@ -16,9 +16,7 @@ apkreader
     console.log(m.package, m.versionName, "(" + m.versionCode + ")");
     console.log("Done.");
   })
-  .then(() => {
-    reader.close();
-  })
   .catch((err) => {
     console.error("ERROR: " + err);
-  });
+  })
+  .finally(() => reader.close());
