@@ -1,5 +1,5 @@
 {
-  "name": "apk-parser-promise",
+  "name": "node-apk-parser-promise",
   "version": "1.0.0",
   "description": "Extracts information from APK files asynchronously with a promise-based API.",
   "keywords": [
