@@ -1,15 +1,16 @@
 {
-  "name": "node-apk-parser-async",
+  "name": "node-apk-parser-promise",
   "version": "0.2.4",
-  "description": "Extracts information from APK files.",
+  "description": "Extracts information from APK files asynchronously with a promise-based API.",
   "keywords": [
     "android",
     "apk",
     "manifest",
-    "AndroidManifest"
+    "AndroidManifest",
+    "promise"
   ],
   "bugs": {
-    "url": "https://github.com/scorpiodawg/node-apk-parser/issues"
+    "url": "https://github.com/scorpiodawg/node-apk-parser-promise/issues"
   },
   "license": "Apache-2.0",
   "author": {
@@ -22,9 +23,11 @@
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/scorpiodawg/node-apk-parser"
+    "url": "https://github.com/scorpiodawg/node-apk-parser-promise"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "jasmine"
+  },
   "dependencies": {
     "adm-zip": "~0.4.4",
     "bluebird": "^3.5.1",
@@ -37,5 +40,5 @@
   "engines": {
     "node": ">= 0.10.4"
   },
-  "homepage": "https://github.com/scorpiodawg/node-apk-parser"
+  "homepage": "https://github.com/scorpiodawg/node-apk-parser-promise"
 }
