@@ -1,4 +1,4 @@
-node-apk-parser-promises
+node-apk-parser-promise
 ===
 
 This is a fork of `@arthur-zhang`'s [node-apk-parser library](https://github.com/arthur-zhang/node-apk-parser)
