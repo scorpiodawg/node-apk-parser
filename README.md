@@ -5,6 +5,14 @@ This is a fork of `@arthur-zhang`'s [node-apk-parser library](https://github.com
 to enable an asynchronous API for use in servers. It uses the promises API and is based on the
 `bluebird` Node.js library.
 
+## Credits
+
+* [@arthur-zhang](https://github.com/arthur-zhang) whose work this is derived from
+* [@rubenv](https://github.com/rubenv) whose [work](https://github.com/rubenv/node-apk-parser)
+  was the original basis for the aforementioned project
+* ADB parsing courtesy [adbkit-apkparser](https://github.com/openstf/adbkit-apkreader) from the
+  excellent OpenSTF folks
+
 # Install via NPM:
 
 ```bash
