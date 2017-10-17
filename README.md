@@ -40,11 +40,11 @@ require('node-apk-parser-promise')
     // Got the APK's AndroidManifest.xml object
     console.log(manifest);
   })
+  .then(() => {
+    reader.close();
+  })
   .catch((err) => {
     console.error("ERROR: " + err);
-  }).
-  done(() => {
-    reader.close();
   });
 ```
 
