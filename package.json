@@ -23,11 +23,13 @@
     "url": "git+https://github.com/scorpiodawg/node-apk-parser-promise.git"
   },
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "depcheck": "if [ $(command -v npx) ]; then npx depcheck; else echo 'Not available'; fi"
   },
   "dependencies": {
     "bluebird": "^3.5.1",
     "fs-extra": "^4.0.2",
+    "openssl-wrapper": "^0.3",
     "stream-buffers": "^3.0.1",
     "winston": "^2.4.0",
     "yauzl": "^2.8.0"

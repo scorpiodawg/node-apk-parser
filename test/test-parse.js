@@ -1,4 +1,4 @@
-require('winston').level = 'info'; // set to 'debug' for more logging
+require('winston').level = 'debug'; // set to 'debug' for more logging
 const apkreader = require('../lib/apkreader');
 const process = require('process');
 
@@ -12,11 +12,19 @@ apkreader
   })
   .then((m) => {
     manifest = m;
-    console.log("\n*** APK READ SUCCESSFULLY! ***")
+    console.log("\n*** APK READ SUCCESSFULLY! ***");
     console.log(m.package, m.versionName, "(" + m.versionCode + ")");
-    console.log("Done.");
+    return reader.readCertificate();
+  })
+  .then((certInfo) => {
+    console.log("\n*** CERTIFICATE READ SUCCESSFULLY! ***");
+    delete certInfo.raw;
+    console.log(certInfo);
   })
   .catch((err) => {
-    console.error("ERROR: " + err);
+    console.error("" + err);
   })
-  .finally(() => reader && reader.close());
+  .finally(() => {
+    if (reader) reader.close();
+    console.log("Done.");
+  });
