@@ -19,4 +19,4 @@ apkreader
   .catch((err) => {
     console.error("ERROR: " + err);
   })
-  .finally(() => reader.close());
+  .finally(() => reader && reader.close());
